@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitali Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="hero" id="hero">
+        <header class="header">
+        <a href="#" class="logo">Mitali.</a>
+
+        <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- NAVIGATION -->
+            <nav class="navbar" id="navbar">
+                <a href="#hero" class="active">Home</a>
+                <a href="#aboutme">About Me</a>
+                <a href="#education">Education</a>
+                <a href="#skills">My Skills</a>
+                <a href="#contact">Contact Me</a>
+            </nav>
+        </header>
+        <h1><span>Welcome to my <br> </span>Portfolio!</h1>
+
+    </div>
+
+    <div class="welcome">
+        <div class="welcome-left">
+            <img src="img/welcome-img-01.jpg" alt="a laptop with notebooks and headphone">
+        </div>
+        <div class="welcome-middle">
+            <h2>Making It Happen</h2>
+        </div>
+        <div class="welcome-right">
+            <img src="img/welcome-img-02.jpg" alt="a laptop with coffee and notepads along with women's hands">
+        </div>
+    </div>
+
+    <section class="about-me" id="aboutme">
+        <img class="about-img" src="img/mitali_portfolio.jpg" alt="A Image of Mitali Padave">
+        <h1 class="about-title">Mitali Padave</h1>
+        <h2 class="about-subtitle">[Frontend Developer]</h2>
+
+        <div class="about-text">
+            <p>Hello! I'm Mitali Padave, a passionate web developer 
+                with a strong foundation in creating responsive and 
+                user-friendly websites.
+                I hold a Diploma and Degree in Computer Engineering. <br><br>
+                After taking time to care for my grandmother from 2023-2025, I'm now fully focused on building my career in web development.
+</p>
+            <br><p>I specialize in HTML5 and CSS3. Currently 
+                expanding my skills in JavaScript and React.js 
+                to build modern, dynamic web applications.</p>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+    <h2>Education</h2>
+
+    <div class="education-entry">
+        <div class="education-header">
+            <h3>Bachelor of Engineering in Computer Engineering</h3>
+            <span class="dates">2020 - 2023</span>
+        </div>
+        <p class="institution">Ramrao Adik Institute of Technology</p>
+        <p class="location">Nerul, Navi Mumbai</p>
+        <p>CGPA:: 9.15</p>
+    </div>
+
+    <div class="education-entry">
+        <div class="education-header">
+            <h3>Diploma in Computer Engineering</h3>
+            <span class="dates">2017 - 2020</span>
+        </div>
+        <p class="institution">Dr. D. Y. Patil Polytechnic</p>
+        <p class="location">Nerul, Navi Mumbai</p>
+        <p>Percentage:: 90.97%</p>
+    </div>
+
+    <div class="education-entry">
+        <div class="education-header">
+            <h3>10th Standard</h3>
+            <span class="dates">2016 - 2017</span>
+        </div>
+        <p class="institution">D. A. V. Public School</p>
+        <p class="location">Seawoods, Navi Mumbai</p>
+        <p>Percentage:: 86.40%</p>
+    </div>
+</section>
+
+    <section class="portfolio" id="skills">
+        
+        <h1>My Skills</h1>
+            <div class="skill-card">
+                <h3>HTML5 <i class='bx bxl-html5'></i></h3>
+                <p>Semantic, accessible markup</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>CSS3 <i class='bx bxl-css3' ></i></h3>
+                <p>Modern styling</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript <i class='bx bxl-javascript' ></i></h3>
+                <p>Currently Learning</p>
+            </div>
+            
+        
+    </section>
+
+    <section class="contact" id="contact">
+        <h1>Contact Me</h1>
+
+        <form class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Name:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Message:</label>
+                <textarea></textarea>
+            </div>
+        <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section class="socials">
+        <div class="social-item1">
+        <a href="https://github.com/Mit-06">
+            <img src="img/github.png" alt="github profile">
+        </a>
+        </div>
+        <div class="social-item2">
+            <a href="https://www.linkedin.com/in/mitali-padave-581a2a242/">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" alt="linkedin site">
+            </a>
+        </div>
+    </section>
+
+     <footer class="footer">
+        <p class="copyright">© 2025 Mitali Padave. Built with <i class='bx bx-heart' ></i> and CSS</p>
+     </footer>
+<!-- javascript for Hamburger Menu -->
+     <script>
+        function toggleMenu() {
+        const navbar = document.getElementById('navbar');
+        navbar.classList.toggle('active');
+        
+    }
+    
+    // Close menu when a link is clicked
+    document.querySelectorAll('.navbar a').forEach(link => {
+        link.addEventListener('click', function() {
+            document.getElementById('navbar').classList.remove('active');
+        });
+    });
+
+
+
+     </script>
+
+</body>
+</html>
