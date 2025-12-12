@@ -4,7 +4,7 @@ A clean, responsive portfolio built with HTML5, CSS3, and JavaScript.
 🚀 Live Demo
 https://mitalipadave.netlify.app/
 
-About
+About::
 Frontend developer passionate about creating responsive, user-friendly websites. Strong foundation in HTML5 and CSS3. 
 Currently learning JavaScript and React.js.
 
